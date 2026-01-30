@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Modern Luxury Home – Project Details</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400&family=Inter:wght@300;400&display=swap" rel="stylesheet">
+
+<style>
+body {
+  margin: 0;
+  background: #000;
+  color: #fff;
+  font-family: "Inter", sans-serif;
+}
+
+/* ================= COVER ================= */
+.project-cover {
+  position: relative;
+  height: 100vh;
+  background: url("https://64.media.tumblr.com/617e433ceb9191db7c24f133497daf09/4f1d9d1165f17581-6a/s540x810/e9044553e1ee6c743f8bd17412a440cf169bdc85.pnj")
+    center / cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.project-cover::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.6);
+}
+
+/* Logo */
+.project-logo {
+  position: absolute;
+  top: 40px;
+  left: 60px;
+  z-index: 2;
+}
+
+.project-logo img {
+  height: 48px;
+}
+
+/* Cover Text */
+.cover-content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+}
+
+.cover-content h1 {
+  font-family: "Playfair Display", serif;
+  font-size: 56px;
+  font-weight: 400;
+}
+
+.cover-content span {
+  display: block;
+  margin-top: 12px;
+  font-size: 20px;
+  color: #ddd;
+}
+
+/* ================= CONTENT ================= */
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 100px 20px;
+}
+
+.section {
+  margin-bottom: 100px;
+}
+
+/* LEFT TITLE – RIGHT CONTENT */
+.text-row {
+  display: grid;
+  grid-template-columns: 260px 1fr;
+  gap: 80px;
+}
+
+.text-row h2 {
+  font-family: "Playfair Display", serif;
+  font-size: 28px;
+  font-weight: 400;
+}
+
+.text-content p,
+.text-content ul {
+  max-width: 820px;
+  line-height: 1.8;
+  color: #ddd;
+}
+
+ul {
+  padding-left: 18px;
+}
+
+/* ================= IMAGE GRIDS ================= */
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+
+.final-gallery {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.image-grid img,
+.final-gallery img {
+  width: 100%;
+  display: block;
+}
+
+/* ================= FOOTER ================= */
+.site-footer {
+  border-top: 1px solid rgba(255,255,255,0.1);
+  padding: 40px 20px;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  gap: 20px;
+}
+
+.footer-left h3 {
+  margin: 0;
+  font-family: "Playfair Display", serif;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.footer-left p {
+  margin: 6px 0 0;
+  font-size: 14px;
+  color: #bbb;
+}
+
+.footer-center {
+  font-size: 13px;
+  color: #777;
+}
+
+.footer-right {
+  text-align: right;
+}
+
+/* Social Icons */
+.footer-right a {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-left: 20px;
+  font-size: 14px;
+  color: #bbb;
+  text-decoration: none;
+}
+
+.footer-right svg {
+  width: 18px;
+  height: 18px;
+  fill: #bbb;
+  transition: fill 0.3s ease;
+}
+
+.footer-right a:hover svg {
+  fill: #fff;
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 900px) {
+  .project-logo {
+    top: 20px;
+    left: 20px;
+  }
+
+  .cover-content h1 {
+    font-size: 36px;
+  }
+
+  .text-row {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .final-gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .footer-container {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .footer-right {
+    text-align: center;
+  }
+
+  .footer-right a {
+    margin: 0 10px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<!-- ================= COVER ================= -->
+<section class="project-cover">
+  <div class="project-logo">
+    <img src="https://64.media.tumblr.com/53f0a2468d164ff41d3b183a954e44ee/4f1d9d1165f17581-33/s540x810/3b5156acab01483ebc9cd20c5264d511735e1b1b.pnj" alt="Logo">
+  </div>
+
+  <div class="cover-content">
+    <h1>
+      Modern Luxury Home Design
+      <span>Residential Planning & Elevation</span>
+    </h1>
+  </div>
+</section>
+
+<div class="container">
+
+  <section class="section text-row">
+    <h2>Project overview</h2>
+    <div class="text-content">
+      <p>
+        This project showcases a modern luxury home designed with a strong focus
+        on comfort, functionality, and contemporary aesthetics.
+      </p>
+    </div>
+  </section>
+
+  <section class="section text-row">
+    <h2>Details</h2>
+    <div class="text-content">
+      <ul>
+        <li>Luxury Residential Home</li>
+        <li>Architectural Planning & Exterior Design</li>
+        <li>Modern / Contemporary style</li>
+        <li>Comfort-focused open layouts</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="section text-row">
+    <h2>Specifications</h2>
+    <div class="text-content">
+      <ul>
+        <li>3 Master Bedrooms</li>
+        <li>2 Bathrooms</li>
+        <li>Modern Kitchen</li>
+        <li>Swimming Pool</li>
+        <li>Indoor–outdoor connectivity</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="image-grid">
+      <img src="https://64.media.tumblr.com/c5a2cf0d0a8af1c4d6f494a5b617fbd2/4f1d9d1165f17581-96/s540x810/b1d813d3d744b46c427848a3f9b5dcf2a9b88ada.pnj">
+      <img src="https://64.media.tumblr.com/df7cec01004f5358ffcebed3599d82bc/4f1d9d1165f17581-d6/s540x810/0fda8fcf7364ac8dc00ed4d7d7dad9bea34d8ce4.pnj">
+      <img src="https://64.media.tumblr.com/8bec4d9ae8e4ec32d9eec75ca17ccdee/4f1d9d1165f17581-c7/s540x810/e876a4e5517d2bf3e4978a7dad777c45a84cc5ef.pnj">
+      <img src="https://64.media.tumblr.com/d3ede15b020151ada45b4236ee22e9ee/4f1d9d1165f17581-37/s540x810/4d4ff4c2c4b4de208e9bab7ec82644a9eca3abb1.pnj">
+    </div>
+  </section>
+
+  <section class="section text-row">
+    <h2>My sketches</h2>
+    <div class="text-content image-grid">
+      <img src="https://64.media.tumblr.com/61bd0d814804564129fd7d371c9a75e3/4f1d9d1165f17581-a9/s540x810/a6f48004059a2f6acf4156d4bc3d3c15a9679da4.pnj">
+      <img src="https://64.media.tumblr.com/66b634b77c0e7f5199fbcb12c8d78ee7/4f1d9d1165f17581-33/s540x810/aaca411b61c9bc80731b9d67c0d9eb1e6d671837.pnj">
+    </div>
+  </section>
+
+  <section class="section text-row">
+    <h2>Results</h2>
+    <div class="text-content">
+      <ul>
+        <li>Elegant modern elevation</li>
+        <li>Spacious interior planning</li>
+        <li>Strong indoor–outdoor flow</li>
+        <li>Clear visualization for approvals</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="final-gallery">
+      <img src="https://64.media.tumblr.com/617e433ceb9191db7c24f133497daf09/4f1d9d1165f17581-6a/s540x810/e9044553e1ee6c743f8bd17412a440cf169bdc85.pnj">
+      <img src="https://64.media.tumblr.com/de757e7e50cab64aeb533b759bd8ab37/4f1d9d1165f17581-2b/s540x810/c824a8a173c8302a39294d179b167cf186753cb4.pnj">
+      <img src="https://64.media.tumblr.com/0ea1fbb4ce8fee17d3876483742d82a6/4f1d9d1165f17581-50/s540x810/d473ee8f03abf4048efaa1c4bfd7c59e117c415e.pnj">
+      <img src="https://64.media.tumblr.com/10f33340b9cb0ba98f9fe10779967f07/4f1d9d1165f17581-11/s540x810/a40a0082c3100c65826da5bb2658899ca25ef53b.pnj">
+      <img src="https://64.media.tumblr.com/e12f8d2cdcf4c0dcd0b9ad79aa688e2a/4f1d9d1165f17581-3c/s540x810/f10cf1ca3bdddb4a97d7a8ea460a5813d2a5027c.pnj">
+      <img src="https://64.media.tumblr.com/0a15b56584d38f0c1f1f1ace2a9d2dad/4f1d9d1165f17581-ed/s500x750/343725bfa411b069a7aa8e9ee79f9e2261be2b54.pnj">
+      <img src="https://64.media.tumblr.com/3a5bfe0679b64b884d31e33c598a9cce/4f1d9d1165f17581-27/s540x810/88f0d6bc52613ee4e54e8a10a38706a371e1a83d.pnj">
+      <img src="https://64.media.tumblr.com/f053f87947207b54e91f40aec6a45b6b/4f1d9d1165f17581-98/s540x810/49553bc37ed9d13af4973eb11115ad911a9c66c2.pnj">
+    </div>
+  </section>
+
+</div>
+
+<footer class="site-footer">
+  <div class="footer-container">
+
+    <div class="footer-left">
+      <h3>Loganathan M</h3>
+      <p>Interior Designer · India</p>
+    </div>
+
+    <div class="footer-center">
+      © 2026 Loganathan M
+    </div>
+
+    <div class="footer-right">
+      <a href="https://www.instagram.com/lk_interior_design2" target="_blank">
+        <svg viewBox="0 0 24 24"><path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm5 5a5 5 0 1 0 0 10 5 5 0 0 0 0-10zm6.5-.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3z"/></svg>
+      </a>
+
+      <a href="https://www.linkedin.com/in/loganathan-m-219266288" target="_blank">
+        <svg viewBox="0 0 24 24"><path d="M4.98 3.5A2.48 2.48 0 1 1 5 8.46 2.48 2.48 0 0 1 4.98 3.5zM3 9h4v12H3zm7 0h3.8v1.7h.05a4.17 4.17 0 0 1 3.75-2.06c4 0 4.7 2.63 4.7 6.05V21h-4v-5.3c0-1.26 0-2.9-1.77-2.9s-2.04 1.38-2.04 2.8V21h-4z"/></svg>
+      </a>
+    </div>
+
+  </div>
+</footer>
+
+</body>
+</html>
